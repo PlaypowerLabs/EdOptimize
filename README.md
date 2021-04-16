@@ -1,5 +1,5 @@
 # EdOptimize Learning Analytics Toolkits
-### for K-12 Digital Learning Platforms
+### For K-12 Digital Learning Platforms
 
 Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Toolkits, product, curriculum, and customer support teams can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from these toolkits will enable many stakeholders to take evidence based decisions that are aimed at creating an engaging and effective online learning experience. 
 
@@ -12,6 +12,8 @@ We are providing 3 learning analytics toolkits with different focus areas:
 3. **Platform Analytics**: Discover trends and power users in the online learning platform. Use the user behavior data to tweak the online platform and increase user retention and engagement.
 
 All of the above toolkits work with a common data format. Here is a simplified diagram of how things work:
+
+Figure 1: How things work at a high level![image](https://user-images.githubusercontent.com/830400/115012160-1bfd4700-9ecd-11eb-9882-1ba3efbfe5dc.png)
 
 Below, we have provided more details of each of the toolkits. As indicated in the diagram above, these toolkits are based on a common data format. This data format is described at the end. If you can get your data in the given format, all of the toolkits will start working for you. If you do not have all of the data, you might have to modify the R code.
 
