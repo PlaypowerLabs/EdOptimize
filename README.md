@@ -13,7 +13,7 @@ We are providing 3 learning analytics toolkits with different focus areas:
 
 All of the above toolkits work with a common data format. Here is a simplified diagram of how things work:
 
-Figure 1: How things work at a high level![image](https://user-images.githubusercontent.com/830400/115012160-1bfd4700-9ecd-11eb-9882-1ba3efbfe5dc.png)
+Figure 1: How things work at a high level![image](https://user-images.githubusercontent.com/830400/115994507-e820d080-a5f4-11eb-9c2b-fbbe4067b353.png)
 
 Below, we have provided more details of each of the toolkits. As indicated in the diagram above, these toolkits are based on a common data format. This data format is described at the end. If you can get your data in the given format, all of the toolkits will start working for you. If you do not have all of the data, you might have to modify the R code.
 
@@ -21,7 +21,11 @@ Below, we have provided more details of each of the toolkits. As indicated in th
 
 Live Demo: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
 
-Implementation Analytics toolkit presents a view of how a school district (which is a group of schools) is implementing a digital learning program. Every data view in this toolkit is limited to a single school district. Here are the sections in this toolkit:
+Implementation Analytics toolkit presents a view of how a school district (which is a group of schools) is implementing a digital learning program. Every data view in this toolkit is limited to a single school district.
+
+Figure 2: Implementation Analytics sections![image](https://user-images.githubusercontent.com/830400/115994526-fcfd6400-a5f4-11eb-85e4-6bdd2613796f.png)
+
+Here are the descriptions of the sections in this toolkit:
 
 1. **Overall Usage**: High level summary and distribution of the teacher and student usage across subjects. Average level of activity for teachers and students.
 2. **Usage Over Time**: Several views of usage over time at the day, week, and month level. New versus returning users over time, average session duration over time, average events per user over time. Leaving and bouncing users can also be tracked. Raw data for the district is also available.
@@ -32,7 +36,11 @@ Implementation Analytics toolkit presents a view of how a school district (which
 
 Live Demo: https://playpowerlabs.shinyapps.io/edopt_curriculum_analytics/
 
-Curriculum Analytics toolkit is aimed at understanding how a set of related products (e.g. Math Grades 3-5) are being used at large. This toolkit can provide valuable data to the curriculum teams that can be used to improve various aspects of the digital program that are directly related with its effectiveness. Here are the sections in this toolkit:
+Curriculum Analytics toolkit is aimed at understanding how a set of related products (e.g. Math Grades 3-5) are being used at large. This toolkit can provide valuable data to the curriculum teams that can be used to improve various aspects of the digital program that are directly related with its effectiveness.
+
+Figure 3: Curriculum Analytics sections![image](https://user-images.githubusercontent.com/830400/115994734-d2f87180-a5f5-11eb-9d87-5fbcbf3ff56c.png)
+
+Here are the descriptions of the sections in this toolkit:
 
 1. **Overall Usage**: In this section, we can see the high level usage summary of a group of related products. We can see the number of users and sessions within each product for a given school year. We can also see the activity level of students and teachers in this view.
 2. **Usave Over Time**: Here, we can see several usage over time views for both the overall group of products and for individual products. The individual view allows us to compare how different products within the product group compare to each other for the different metrics. We can see new versus returning users over time, average session duration over time, and average events per user over time. We can also see leaving and bouncing users in this view. We can see this view at the day, week, or month resolution for the selected time frame.
@@ -46,7 +54,11 @@ Curriculum Analytics toolkit is aimed at understanding how a set of related prod
 
 Live Demo: https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
 
-This toolkit allows us to observer the overall usage of the entire digital learning platform. We can get insights about how different parts of the platform are being used, which types of content is being used more, and who are the power users. Here are the sections in this toolkit:
+This toolkit allows us to observer the overall usage of the entire digital learning platform. We can get insights about how different parts of the platform are being used, which types of content is being used more, and who are the power users.
+
+Figure 4: Platform Analytics sections![image](https://user-images.githubusercontent.com/830400/115994941-b01a8d00-a5f6-11eb-8278-a3a938b7d416.png)
+
+Here are the descriptions of the sections in this toolkit:
 
 1. **Overall Usage**: In this section, you can see the high level usage metrics of the platform, usage by subject, and a view of how active your users are at large. You can see the metrics by both number of users and sessions.
 2. **Usage Over Time**: Here, we can see several usage over time views for the whole platform. We can see new versus returning users over time, average session duration over time, and average events per user over time. We can also see leaving and bouncing users in this view. We can see this view at the day, week, or month resolution for the selected time frame.
