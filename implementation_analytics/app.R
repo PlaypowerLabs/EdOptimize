@@ -12,6 +12,10 @@ library(gtools)
 library(shinycssloaders)
 
 load('data/general_data.RData')
+load('data/overall_usage_tab_data.RData')
+load('data/usage_over_time_tab_data.RData')
+load('data/curriculum_insights_tab_data.RData')
+load('data/leaderboard_tab_data.RData')
 
 source('functions.R')
 source('appCSS.R')
@@ -67,10 +71,6 @@ ui <- tagList(
 
 server <- function(input, output){
   
-  load('data/overall_usage_tab_data.RData')
-  load('data/usage_over_time_tab_data.RData')
-  load('data/curriculum_insights_tab_data.RData')
-  load('data/leaderboard_tab_data.RData')
   source(file.path('server','overall_usage_server.R'), local = TRUE)$value
   waiter::waiter_hide()
   source(file.path('server','usage_over_time_server.R'), local = TRUE)$value
