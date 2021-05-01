@@ -1,10 +1,11 @@
 #This script produces all the aggregated data files required for Platform Analytics Dashboard
 
+library(maps)
 library(tidyverse)
 library(lubridate)
 library(magrittr)
 library(rstudioapi)
-library(maps)
+
 
 load('data_prep/raw_event_data.RData')
 folder_path <- file.path(rstudioapi::getActiveProject(), 'platform_analytics', 'data')
@@ -1033,62 +1034,6 @@ dl_overall_rdf <- event_data_2 %>%
   ungroup() %>%
   replace_na(list(avg_active_days = 0, avg_contents = 0, avg_student_events = 0, avg_teacher_events = 0))
 
-# #subject wise
-# 
-# dl_subject_wise_rdf <- event_data_2 %>%
-#   group_by(subject, districtname, userroletype, userid) %>%
-#   summarise(n_active_days = n_distinct(date),
-#             n_contents = n_distinct(product_id, content),
-#             n_events = n()) %>%
-#   ungroup() %>%
-#   group_by(subject, districtname) %>%
-#   summarise(avg_active_days = round(mean(n_active_days,na.rm = TRUE),0),
-#             avg_contents = round(mean(n_contents,na.rm = TRUE),0),
-#             n_students = sum(userroletype == 'Student'),
-#             n_teachers = sum(userroletype == 'Teacher'),
-#             avg_student_events = round(mean(n_events[userroletype == 'Student'],na.rm = TRUE),0),
-#             avg_teacher_events = round(mean(n_events[userroletype == 'Teacher'], na.rm = TRUE),0)) %>%
-#   ungroup() %>%
-#   replace_na(list(avg_active_days = 0, avg_contents = 0, avg_student_events = 0, avg_teacher_events = 0))
-# 
-# 
-# #grade band wise
-# 
-# dl_grade_band_wise_rdf <- event_data_2 %>%
-#   group_by(grade_band, districtname, userroletype, userid) %>%
-#   summarise(n_active_days = n_distinct(date),
-#             n_contents = n_distinct(product_id, content),
-#             n_events = n()) %>%
-#   ungroup() %>%
-#   group_by(grade_band, districtname) %>%
-#   summarise(avg_active_days = round(mean(n_active_days,na.rm = TRUE),0),
-#             avg_contents = round(mean(n_contents,na.rm = TRUE),0),
-#             n_students = sum(userroletype == 'Student'),
-#             n_teachers = sum(userroletype == 'Teacher'),
-#             avg_student_events = round(mean(n_events[userroletype == 'Student'],na.rm = TRUE),0),
-#             avg_teacher_events = round(mean(n_events[userroletype == 'Teacher'], na.rm = TRUE),0)) %>%
-#   ungroup() %>%
-#   replace_na(list(avg_active_days = 0, avg_contents = 0, avg_student_events = 0, avg_teacher_events = 0))
-# 
-# #product group wise
-# 
-# dl_product_group_wise_rdf <- event_data_2 %>%
-#   group_by(product_group, districtname, userroletype, userid) %>%
-#   summarise(n_active_days = n_distinct(date),
-#             n_contents = n_distinct(product_id, content),
-#             n_events = n()) %>%
-#   ungroup() %>%
-#   group_by(product_group, districtname) %>%
-#   summarise(avg_active_days = round(mean(n_active_days,na.rm = TRUE),0),
-#             avg_contents = round(mean(n_contents,na.rm = TRUE),0),
-#             n_students = sum(userroletype == 'Student'),
-#             n_teachers = sum(userroletype == 'Teacher'),
-#             avg_student_events = round(mean(n_events[userroletype == 'Student'],na.rm = TRUE),0),
-#             avg_teacher_events = round(mean(n_events[userroletype == 'Teacher'], na.rm = TRUE),0)) %>%
-#   ungroup() %>%
-#   replace_na(list(avg_active_days = 0, avg_contents = 0, avg_student_events = 0, avg_teacher_events = 0))
-# 
-#new vs returning plot
 
 dl_nvr_overall_rdf <- event_data_2 %>%
   group_by(userid) %>%
@@ -1115,5 +1060,7 @@ save(
   dl_eot_overall_rdf,
   file = file.path(folder_path,'leaderboard_tab_data.RData')
 )
+
+detach("package:maps", unload = TRUE)
 
 # END ---------------------------------------------------------------------

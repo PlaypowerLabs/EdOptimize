@@ -1,9 +1,9 @@
 # This script produces all the data files required bu Curriculum Analytics Dashboard 
 
+library(ltm)
 library(tidyverse)
 library(lubridate)
 library(magrittr)
-library(ltm)
 library(rstudioapi)
 
 load('data_prep/raw_event_data.RData')
@@ -1024,5 +1024,7 @@ save(
   dl_product_wise_eot_rdf,
   file = file.path(folder_path,'leaderboard_tab_data.RData')
 )
+
+detach("package:MASS", unload = TRUE)
 
 # END ---------------------------------------------------------------------

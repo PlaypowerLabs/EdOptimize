@@ -9,8 +9,6 @@ library(scales)
 library(lubridate)
 library(gtools)
 library(shinycssloaders)
-# detach("package:ltm", unload = TRUE)
-# detach("package:MASS", unload = TRUE)
 
 load('data/general_data.RData')
 load('data/overall_usage_tab_data.RData')
