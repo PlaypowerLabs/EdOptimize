@@ -7,7 +7,11 @@ Brought to you by [Tirth Shah](https://www.linkedin.com/in/tirth-shah-871b3217b/
 ## Introduction
 Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Platform, we can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from the dashboards in the platform will enable many stakeholders to take evidence based decisions that are aimed at creating an improved online learning experience. 
 
-In the EdOptimize Platform, we are providing 3 extensive data dashboards with different focus areas:
+In the EdOptimize Platform, we are providing 3 extensive data dashboards with different focus areas (see below for more details):
+
+![image](https://user-images.githubusercontent.com/830400/116782970-c2d70b00-aaa9-11eb-8c77-0f17d477af68.png)
+
+Here are the brief descriptions of each of the platforms:
 
 1. **Platform Analytics**: To discover trends and power users in the online learning platform. You can use the user behavior data in this platform to identify actions that can increase user retention and engagement. Live Demo: https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
 
@@ -55,19 +59,19 @@ Here are the descriptions of each of the sections in this dashboard:
 
 #### Live Demo: https://playpowerlabs.shinyapps.io/edopt_curriculum_analytics/
 
-Curriculum Analytics toolkit is aimed at understanding how a set of related products (e.g. Math Grades 3-5) are being used at large. This toolkit can provide valuable data to the curriculum teams that can be used to improve various aspects of the digital program that are directly related with its effectiveness.
+This dashboard is aimed at understanding how a set of related products (e.g. Math Grades 3-5) are being used at large. The data in this dashboard can provide valuable insights to the curriculum teams that want to improve various aspects of the digital program. The analytics in this dashboard always focus on a specific school year.
 
-Figure 3: Curriculum Analytics sections![image](https://user-images.githubusercontent.com/830400/115994734-d2f87180-a5f5-11eb-9d87-5fbcbf3ff56c.png)
+Curriculum Analytics![image](https://user-images.githubusercontent.com/830400/115994734-d2f87180-a5f5-11eb-9d87-5fbcbf3ff56c.png)
 
 Here are the descriptions of each of the sections in this dashboard:
 
-1. **Overall Usage**: In this section, we can see the high level usage summary of a group of related products. We can see the number of users and sessions within each product for a given school year. We can also see the activity level of students and teachers in this view.
-2. **Usave Over Time**: Here, we can see several usage over time views for both the overall group of products and for individual products. The individual view allows us to compare how different products within the product group compare to each other for the different metrics. We can see new versus returning users over time, average session duration over time, and average events per user over time. We can also see leaving and bouncing users in this view. We can see this view at the day, week, or month resolution for the selected time frame.
-3. **Content Usage**: This section shows us how different types of content items and the specific content items themselves are being utilized by the users of the digital program. We can pick an individual product or look at the data at a group level. We can see a distribution of the % of content accessed by the users, which type of content was used by how many users, and usage over time for the different type of content items (e.g. Video, Quiz, Test, Document, etc.) Finally, we can also see a table that shows us the usage of individual content items along with how much time was spent on them. 
-4. **Assessment Analysis**: In this part, we can see data analysis of every assessment present in the individual products. We can see how many students took the assessment, what was their average score, and also the Cronbach's Alpha of the assessment which is a measure of overall reliability of the assessment. We can pick an individual assessment and see the score distribution of that assessment, along with item level data that tell us how many students responded to the item, what was the average % correct for the item, and the point biserial measure which tell us how predictive an invidiau item is of the overall assessment.
-5. **Skill Performance**: In this section, we can see average student performance for each skill. We can also see how different skills were assessed in the product over time (we call this skill pacing).
-6. **Curriculum Pacing**: Here, you can pick a specific product from the curriculum and look at the usage of that product in the district. You will be able to see plots similar to the Usage Over Time section. Curriculum Pacing plots will allow you to track the pacing of the district for a given product. You can see it for students or teachers, and you can also look at different metrics in the pacing plot. You can also see performance heatmap and performance dotplot for the pacing plots.
-7. **Leaderboard**: In this part, we can see which school districts are the top users of the products within this product group. We can select an individual district by clicking on its name in the leaderboard table and see the district usage over time.
+1. **Overall Usage**: In this section, you can see the high level usage summary of a group of related products. You can see the number of users and sessions within each product. We can also see the activity level of students and teachers in this view.
+2. **Usave Over Time**: Here, you can see several usage over time views for both the overall group of products and for individual products. The individual view will allow you to compare how different products within the product group compare to each other. You can see new versus returning users over time, average session duration over time, and average events per user over time in this view. You can also see leaving and bouncing users over time in this view, and the data can be seen at the level of day, week, or month for the selected time frame.
+3. **Content Usage**: This section will show you how different types of content items and the specific content items themselves are being utilized by the online learners. You can pick an individual product or look at the data at the product group level. You can see the distribution of the % content utilization, which type of content was used by how many users, and usage over time for the different type of content items (e.g. Videos, Quizzes, Tests, Documents, etc.) Finally, you can also see a table that shows the usage of individual content items along with how much time was spent on them.
+4. **Assessment Analysis**: In this part, you can see data analysis of every assessment present in the individual products. You can see how many students took each assessment, what was their average score, and also the Cronbach's Alpha of the assessment which is a measure of overall reliability of the assessment. You can pick an individual assessment and see the score distribution of that assessment, along with item level data that tell us how many students responded to each of the items, what was their average % correct, and the point biserial measure of the item which tell us how predictive the individual item is of the overall assessment. If you find assessments with low Cronbach's Alpha and items with low point biserial, they should be inspected further for their validity.
+5. **Skill Performance**: In this section, you can see the average student performance on each skill that is part of a product. You can also see how different skills were assessed over time during the school year.
+6. **Curriculum Pacing**: Curriculum Pacing charts are award-winning data visualizations that show how students go through a curriculum over time. [Click here to read our research on the Curriculum Pacing](https://link.springer.com/chapter/10.1007/978-3-319-91464-0_38). In this section, you can pick a specific product from the curriculum and look at the pacing patterns of the students. You can see the pacing patterns for students or teachers. You can choose between a heatmap or dot plot representation of the pacing visualization. There are several metrics that can be plotted on these visualizations.
+7. **Leaderboard**: In this part of the dashboard, you can see which school districts are the top users of the products within this product group. You can select an individual district by clicking on its name in the leaderboard table and see the district's product usage over time.
 
 ### Implementation Analyitcs
 
@@ -77,7 +81,7 @@ Implementation Analytics toolkit presents a view of how a school district (which
 
 Figure 2: Implementation Analytics sections![image](https://user-images.githubusercontent.com/830400/115994526-fcfd6400-a5f4-11eb-85e4-6bdd2613796f.png)
 
-Here are the descriptions of the sections in this toolkit:
+Here are the descriptions of each of the sections in this dashboard:
 
 1. **Overall Usage**: High level summary and distribution of the teacher and student usage across subjects. Average level of activity for teachers and students.
 2. **Usage Over Time**: Several views of usage over time at the day, week, and month level. New versus returning users over time, average session duration over time, average events per user over time. Leaving and bouncing users can also be tracked. Raw data for the district is also available.
