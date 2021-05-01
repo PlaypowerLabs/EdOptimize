@@ -2,35 +2,34 @@
 
 Brought to you by [Tirth Shah](https://www.linkedin.com/in/tirth-shah-871b3217b/), [Nirmal Patel](https://www.linkedin.com/in/nirmalpatel21/), and [Aditya Sharma](https://www.linkedin.com/in/aditya-sharma-06b529101/) at [Playpower Labs](https://playpowerlabs.com/). For any help with modifying the dashboards, please open an issue or contact Nirmal (nirmal@playpowerlabs.com).
 
+#### Live Demo Links
+
+Platform Analytics: https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
+
+Curriculum Analytics: https://playpowerlabs.shinyapps.io/edopt_curriculum_analytics/
+
+Implementation Analytics: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
+
 #### Table of Contents
 
 ## Introduction
 Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Platform, we can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from the dashboards in the platform will enable many stakeholders to take evidence based decisions that are aimed at creating an improved online learning experience. 
 
-In the EdOptimize Platform, we are providing 3 extensive data dashboards with different focus areas (see below for more details):
+In the EdOptimize Platform, we are providing 3 extensive data dashboards. **These dashboards are built using R/Shiny platform.**
 
-![image](https://user-images.githubusercontent.com/830400/116782970-c2d70b00-aaa9-11eb-8c77-0f17d477af68.png)
+![image](https://user-images.githubusercontent.com/830400/116783550-e3ed2b00-aaac-11eb-8171-395c0f1c43a6.png)
 
 Here are the brief descriptions of each of the platforms:
 
-1. **Platform Analytics**: To discover trends and power users in the online learning platform. You can use the user behavior data in this platform to identify actions that can increase user retention and engagement. Live Demo: https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
+1. **Platform Analytics**: To discover trends and power users in the online learning platform. You can use the user behavior data in this platform to identify actions that can increase user retention and engagement. See the dashboard in action here: https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
 
-2. **Curriculum Analytics**: To identify learning patterns in the digital curriculum products. Using this dashboard, you can locate content that needs change and see classroom pacing analytics. You can also look at assessment data, item analysis, and standards performance of the curriculum users. Live Demo: https://playpowerlabs.shinyapps.io/edopt_curriculum_analytics/
+2. **Curriculum Analytics**: To identify learning patterns in the digital curriculum products. Using this dashboard, you can locate content that needs change and see classroom pacing analytics. You can also look at assessment data, item analysis, and standards performance of the curriculum users. See the dashboard in action here: https://playpowerlabs.shinyapps.io/edopt_curriculum_analytics/
 
-3. **Implementation Analytics**: To track the implementation of the digital programs in school districts. This dashboard will help districts make the most out of their online learning programs. Live Demo: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
+3. **Implementation Analytics**: To track the implementation of the digital programs in school districts. This dashboard will help districts make the most out of their online learning programs. See the dashboard in action here: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
 
 Our platform relies on a commonly seen hierarchical model of educational activity that consists of school districts, schools, classrooms, and ultimately students and teachers within those classrooms. We also have a simple conceptual model of educational programs that has product groups and products where the former is a group of related products such as K-5 Math, 6-8 Science, etc. and the latter represents the individual grade level products. Here is a diagram that relates the conceptual models of the platform with the data dashboards:
 
-Coneptual Model of the EdOptimize Platform![image](https://user-images.githubusercontent.com/830400/116782703-57406e00-aaa8-11eb-8a9f-f48cfe720fcf.png)
-
-All of the analytics dashboards in the EdOptimize Platform work with two commonly used edtech data collection formats:
-
-1. **Event Log Data**: A dataset that typically contains what events or actions students and teachers do over time. [Click here to view a sample](https://docs.google.com/spreadsheets/d/1Zcb4TLAanbNVZORve91Upa0-QL9liZ3G7XNx3Cz4DF4/edit#gid=0)
-2. **Item Response Log Data**: A dataset that contains individual responses to test items from the students. [Click here to view a sample](https://docs.google.com/spreadsheets/d/1Zcb4TLAanbNVZORve91Upa0-QL9liZ3G7XNx3Cz4DF4/edit#gid=1857608461)
-
-The data processing scripts in this repository are designed to take the above two data tables and transform them into several smaller tables that will contain the learning analytics.
-
-Data Processing Workflow![image](https://user-images.githubusercontent.com/830400/115994507-e820d080-a5f4-11eb-9c2b-fbbe4067b353.png)
+Coneptual Model of the EdOptimize Platform![image](https://user-images.githubusercontent.com/830400/116783565-f36c7400-aaac-11eb-9d1a-475420cf89fc.png)
 
 The next section contains detailed descriptions of the dashboards. The section after that walks through the steps to get the dashboards running on your end with your own data.
 
@@ -44,7 +43,7 @@ Now we will describe each of the dashboards and the various sections withih them
 
 This dashboard allows us to observe the overall usage of an entire digital learning platform. By using this dashboard, we can get insights about how different parts of the platform are being used, which types of content is being used more or less, and discover who are the power users of the platform.
 
-Platform Analytics![image](https://user-images.githubusercontent.com/830400/115994941-b01a8d00-a5f6-11eb-8278-a3a938b7d416.png)
+![image](https://user-images.githubusercontent.com/830400/115994941-b01a8d00-a5f6-11eb-8278-a3a938b7d416.png)
 
 Here are the descriptions of each of the sections in this dashboard:
 
@@ -61,7 +60,7 @@ Here are the descriptions of each of the sections in this dashboard:
 
 This dashboard is aimed at understanding how a set of related products (e.g. Math Grades 3-5) are being used at large. The data in this dashboard can provide valuable insights to the curriculum teams that want to improve various aspects of the digital program. The analytics in this dashboard always focus on a specific school year.
 
-Curriculum Analytics![image](https://user-images.githubusercontent.com/830400/115994734-d2f87180-a5f5-11eb-9d87-5fbcbf3ff56c.png)
+![image](https://user-images.githubusercontent.com/830400/115994734-d2f87180-a5f5-11eb-9d87-5fbcbf3ff56c.png)
 
 Here are the descriptions of each of the sections in this dashboard:
 
@@ -75,43 +74,56 @@ Here are the descriptions of each of the sections in this dashboard:
 
 ### Implementation Analyitcs
 
-Live Demo: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
+#### Live Demo: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
 
-Implementation Analytics toolkit presents a view of how a school district (which is a group of schools) is implementing a digital learning program. Every data view in this toolkit is limited to a single school district.
+This dashboard presents a view of how a school district (which is a group of schools) is implementing a digital learning program. Every data view in this dashboard is limited to a single school district. The various patterns of digital learning within the district can empower many stakeholders to make online learning more effective for students.
 
-Figure 2: Implementation Analytics sections![image](https://user-images.githubusercontent.com/830400/115994526-fcfd6400-a5f4-11eb-85e4-6bdd2613796f.png)
+![image](https://user-images.githubusercontent.com/830400/115994526-fcfd6400-a5f4-11eb-85e4-6bdd2613796f.png)
 
 Here are the descriptions of each of the sections in this dashboard:
 
-1. **Overall Usage**: High level summary and distribution of the teacher and student usage across subjects. Average level of activity for teachers and students.
-2. **Usage Over Time**: Several views of usage over time at the day, week, and month level. New versus returning users over time, average session duration over time, average events per user over time. Leaving and bouncing users can also be tracked. Raw data for the district is also available.
-3. **Curriculum Insights**: here, you can pick a specific product from the curriculum and look at the usage of that product in the district. You will be able to see plots similar to the Usage Over Time section. Curriculum Pacing plots will allow you to track the pacing of the district for a given product. You can see it for students or teachers, and you can also look at different metrics in the pacing plot. You can also see performance heatmap and performance dotplot for the pacing plots.
-4. **Leaderboard**: Leaderboard shows which schools and classes are most active in the district. You can look at the leaderboard at the overall or at the product level. For any given class or school in the leaderboard, you can see their usage over time by clicking on the class/school name in the leaderboard table (new versus returning users and average events per user).
+1. **Overall Usage**: This section will give you a high level summary and distribution of the teacher and student usage across subjects within the district. You will also see analytics around the average level of activity for teachers and students.
+2. **Usage Over Time**: Here, you can see several views of the usage over time at the day, week, and month level. You can see new versus returning users over time, average session duration over time, and average events per user over time for the different time periods. Leaving and bouncing users can also be tracked here similar to other dashboards. The raw data for the district are also available in this section.
+3. **Curriculum Insights**: Here, you can pick a specific product that the district is using, and closely look at the usage of that product. You will be able to see plots similar to the Usage Over Time section. Curriculum Pacing plots will allow you to track the pacing patterns within the the district for a given product. For more description fo the pacing plots, see the Curriculum Pacing section of the Curriculum Analytics dashboard.
+4. **Leaderboard**: The leaderboard will show you which schools and classes are most active in the district. You can look at the leaderboard at the overall level or at the product level. For any given class or school in the leaderboard, you can see their usage over time by clicking on the class/school name in the leaderboard table.
 
 ## How to Run
-Please follow the steps below to run the toolkits on your end.
+
+Please follow the steps below to run the dashboards on your end.
 
 ### Step 1: Understand the data architecture
-EdOptimize Toolkits depend on two denormalized data tables:
 
- 1. **Event Log Data**: A data table that collects data about actions of the students and teachers. Every row in this table corresponds to one event. Examples of the events are login, content open, log out, etc.
- 2. **Item Response Log Data**: A data table that collects student responses to assessment items. Every row in this table represents a single student response to an item.
- 
-The column structure of these tables is present in the `data_prep/raw_event_data.RData` and `data_prep/raw_item_response_data.RData` files.
+All of the analytics dashboards in the EdOptimize Platform work with two commonly used edtech data collection formats:
+
+1. **Event Log Data**: A dataset that typically contains what events or actions students and teachers do over time. [Click here to view a sample](https://docs.google.com/spreadsheets/d/1Zcb4TLAanbNVZORve91Upa0-QL9liZ3G7XNx3Cz4DF4/edit#gid=0)
+2. **Item Response Log Data**: A dataset that contains individual responses to test items from the students. [Click here to view a sample](https://docs.google.com/spreadsheets/d/1Zcb4TLAanbNVZORve91Upa0-QL9liZ3G7XNx3Cz4DF4/edit#gid=1857608461)
 
 ### Step 2: Collect (or simulate) the raw data
-You can create your own automated data pipeline that creates the two tables mentioned in the section above. Please ensure that the columns and data types of your data match the samples presented in the 
+You can create your own automated data pipeline that creates the two tables mentioned in the section above. Please ensure that the columns and data types of your data match the data samples presented. If you do not have all of the data points presented in the tables above, try to put in some dummy values. If you want to modify these dashboards, please open an issue. If you need professional help, please contact Nirmal (nirmal@playpowerlabs.com).
 
-Optionally, we have also provided a data simulation script `data_prep/raw_data_simulation.R` that simulates the two data tables (i.e. Eveng Log and Item Reponse Log). To simulate the data on your end, you can simply run the `raw_data_simulation.R` and it will generate the RData data files for you.
+Optionally, we have also provided a data simulation script `data_prep/raw_data_simulation.R` that simulates the two data tables (i.e. Eveng Log and Item Reponse Log). To simulate the data on your end, you can simply run the `raw_data_simulation.R` and it will generate the required RData data containing the raw data for you.
 
 ### Step 3: Run the data processing scripts
-Once you have your two data tables ready, you can run the data processing scripts in the `data_prep` folder. There is one script per toolkit. These scripts will generate all of the required RData files for each of the toolkits and copy them in their respective folders. At the end of this step, the toolkits will start running out of the box!
+
+The data processing scripts in this repository are designed to take the above two raw data tables and transform them into several smaller tables that will contain the learning analytics. Here is the 
+
+Data Processing Workflow![image](https://user-images.githubusercontent.com/830400/115994507-e820d080-a5f4-11eb-9c2b-fbbe4067b353.png)
+
+Once you have your two data tables ready (simulated or otherwise), you can run the data processing scripts individual dashboard folders. There is one script per dashboard. These scripts will generate all of the required RData files for each of the dashboards and place them in their respective folders. Here are the scripts for each of the dashboards:
+
+1. Platform Analytics: `implementation_analytics/data/implementation_analytics_data_prep.R`
+2. Curriculum Analytics: `implementation_analytics/data/implementation_analytics_data_prep.R`
+3. Implementation Analytics: `implementation_analytics/data/implementation_analytics_data_prep.R`
+
+At the end of this step, the dashboards will start running out of the box!
 
 ### Step 4: Run the dashboards
-To run any toolkit, you need to first prepare the RData files required for the toolkit. Once you have them in place in the toolkit folder, just run the `app.R` file in the individual toolkit folder.
+To run any dashboard after you have generated its data, simple go to the dashboard folder and run `app.R` file.
 
-## Data Science Services by Playpower Labs
+## About Us
 
-Playpower Labs is one of the world's leading Educational Data Science consulting company. Our award winning team has worked with many different types of educational data. Examples include event data, assessment data, user behavior data, web analytics data, license and entitlement data, roster data, eText data, item response data, time series data, panel data, hierarchical data, skill and standard data, assignment data, knowledge structure data, school demographic data, and more.
+We are a team of dedicated Learning Analytics experts at Playpower Labs.
 
-If you need any help with the toolkits, please contact us at `nirmal@playpowerlabs.com`
+Playpower Labs is one of the world's leading EdTech consulting company. Our award winning research team has worked with many different types of educational data. Examples include event data, assessment data, user behavior data, web analytics data, license and entitlement data, roster data, eText data, item response data, time series data, panel data, hierarchical data, skill and standard data, assignment data, knowledge structure data, school demographic data, and more.
+
+If you need any help with this platform or any other project, please contact our Chief Data Scientist Nirmal Patel at nirmal@playpowerlabs.com He will be happy to have a conversation with you!
