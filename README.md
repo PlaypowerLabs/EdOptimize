@@ -12,14 +12,17 @@ Implementation Analytics: https://playpowerlabs.shinyapps.io/edopt_implementatio
 
 #### Table of Contents
 
-## Introduction
-Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Platform, we can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from the dashboards in the platform will enable many stakeholders to take evidence based decisions that are aimed at creating an improved online learning experience. 
+- [Introduction](#introduction)
+- [Dashboards](#dashboards)
 
-In the EdOptimize Platform, we are providing 3 extensive data dashboards. **These dashboards are built using R/Shiny platform.**
+## Introduction
+Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Platform, we can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from the EdOptimize Platform can enable education stakeholders to take evidence based decisions that are aimed at creating improved online learning experiences. 
+
+EdOptimize Platform is a collection of 3 extensive data dashboards. These dashboards contain many actionable learning analytics that we have designed from our years of work with various school districts in the US.
 
 ![image](https://user-images.githubusercontent.com/830400/116783550-e3ed2b00-aaac-11eb-8171-395c0f1c43a6.png)
 
-Here are the brief descriptions of each of the platforms:
+Here are the brief descriptions of each of the dashboards:
 
 1. **Platform Analytics**: To discover trends and power users in the online learning platform. You can use the user behavior data in this platform to identify actions that can increase user retention and engagement. See the dashboard in action here: https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
 
@@ -99,7 +102,7 @@ All of the analytics dashboards in the EdOptimize Platform work with two commonl
 2. **Item Response Log Data**: A dataset that contains individual responses to test items from the students. [Click here to view a sample](https://docs.google.com/spreadsheets/d/1Zcb4TLAanbNVZORve91Upa0-QL9liZ3G7XNx3Cz4DF4/edit#gid=1857608461)
 
 ### Step 2: Collect (or simulate) the raw data
-You can create your own automated data pipeline that creates the two tables mentioned in the section above. Please ensure that the columns and data types of your data match the data samples presented. If you do not have all of the data points presented in the tables above, try to put in some dummy values. If you want to modify these dashboards, please open an issue. If you need professional help, please contact Nirmal (nirmal@playpowerlabs.com).
+You can create your own automated data pipeline that creates the two tables mentioned in the section above. Please ensure that the columns and data types of your data match the data samples presented. If you do not have all of the data points presented in the tables above, try to put in some dummy values. If you want to modify these dashboards, please open an issue. If you need professional help, see our contact details at the top or bottom.
 
 Optionally, we have also provided a data simulation script `data_prep/raw_data_simulation.R` that simulates the two data tables (i.e. Eveng Log and Item Reponse Log). To simulate the data on your end, you can simply run the `raw_data_simulation.R` and it will generate the required RData data containing the raw data for you.
 
