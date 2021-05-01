@@ -168,12 +168,6 @@ avg_events_per_user_over_time_plot <- function(df, res, facet, userrole, fix_y){
 
 #----------USAGE BY PRODUCTS TAB PLOTS-------
 
-# product_label_order <- paste(rep(c('Math','Science','Literacy','Social Studies'), each = 13),
-#                              rep('Grades', times = 52),
-#                              rep(c(rep('K-2',3),rep('3-5',3),rep('6-8',3),rep('9-12')),times = 4))
-
-
-
 
 product_wise_users_plot <- function(df,color_pal, pg){
 
@@ -270,7 +264,7 @@ content_type_usage_bar_chart <- function(df, color_pal){
 }
 
 content_type_usage_tile_plot <- function(df, fill_col, y_col){
-  #browser()
+  
   df %>%
     mutate(contenttype = factor(contenttype,
                                 levels = c('Video', 'Lesson', 'Quiz', 'Audio', 'Interactive Media', 'Document', 'Test'))) %>%

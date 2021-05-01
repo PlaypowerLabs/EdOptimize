@@ -13,6 +13,7 @@ library(sp)
 library(tigris)
 library(gtools)
 library(shinycssloaders)
+# detach("package:maps", unload = TRUE)
 
 load('data/general_data.RData')
 load('data/overall_usage_tab_data.RData')

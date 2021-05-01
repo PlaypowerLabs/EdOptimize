@@ -153,9 +153,6 @@ output$ou_productwise_table <- DT::renderDataTable({
     pageLength = 10, autoWidth = TRUE, sDom  = '<"top">lrt<"bottom">ip'
   ), class = 'cell-border stripe')
   
-  # init_tbl %>%
-  #   formatStyle('# Students', backgroundColor = DT::styleInterval(brks[['# Students']], clrs[['# Students']])) %>%
-  #   formatStyle('# Teachers', backgroundColor = DT::styleInterval(brks[['# Teachers']], clrs[['# Teachers']]))
   
   
   purrr::reduce(columns, function(x, y) {

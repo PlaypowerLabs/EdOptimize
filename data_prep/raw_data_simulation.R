@@ -1,12 +1,14 @@
+#This script generates raw event data and raw item response data.
+
 library(tidyverse)
 library(lubridate)
 library(magrittr)
 library(rstudioapi)
 
-load('us_states_metadata.RData')
+load('data_prep/us_states_metadata.RData')
 folder_path <- file.path(getActiveProject(), 'data_prep')
 
-#-------DISTRICT DATA PREP---------
+#-------DISTRICT LEVEL DATA PREP---------
 set.seed(18)
 avg_n_districts <- c('lev_1' = 3, 'lev_2' = 7, 'lev_3' = 11, 'lev_4' = 15, 'lev_5' = 21)
 # states_names_df <- data.frame(states_names = states_names,
@@ -24,7 +26,7 @@ tot_districts <- sum(n_districts)
 states_districts_df <- tibble(state = rep(states_names_df$states_names, times = n_districts),
                               districtname = paste0('districtname_',1:tot_districts))
 
-#-----------SCHOOL DATA PREP---------
+#-----------SCHOOL LEVEL DATA PREP---------
 set.seed(17)
 avg_n_schools <- c('low' = 2, 'med' = 4, 'high' = 6)
 samples <- sample(x = c('high', 'med', 'low'),
@@ -39,7 +41,7 @@ states_schools_df <- tibble(state = rep(states_districts_df$state, times = n_sch
                             districtname = rep(states_districts_df$districtname, times = n_schools),
                             schoolname = paste0('schoolname_', 1:tot_schools))
 
-#-------CLASS DATA PREP-------
+#-------CLASS LEVEL DATA PREP-------
 grades <- c('K', as.character(1:12))
 len <- length(grades)
 tot_classes <- nrow(states_schools_df)*len
@@ -51,7 +53,7 @@ class_data <- tibble(state = rep(states_schools_df$state, each = len),
                      grade = rep(grades, times = nrow(states_schools_df)),
                      classname = paste0('classname_', 1:tot_classes))
 
-#-------USER DATA PREP---------
+#-------USER LEVEL DATA PREP---------
 set.seed(19)
 avg_n_students <- c(3,5,7,9,10,11,13,18,14,16,15,12,8)
 names(avg_n_students) <- grades
@@ -276,7 +278,7 @@ all_subject_assessment_item_data <- list(
   'Social Studies' = social_studies_assessment_item_data
 )
 
-#----------EVENT DATA PREP-----------
+#----------STUDENT EVENT DATA PREP-----------
 set.seed(9)
 
 avg_sessions_per_user <- data.frame(Student = c(30,31,32,35,36,37,38,40,43,47,41,39,42),
@@ -618,7 +620,7 @@ rem <- rem[!(rem %in% c('event_data_2','item_response_data','folder_path','item_
 rm(list = c(rem,'rem'))
 
 
-#-----ITEM RESPONSE TABLE PREP--------
+#-----ITEM RESPONSE DATA PREP--------
 
 student_assessment_event_data <- event_data_2 %>%
   filter(contenttype %in% c('Quiz','Test'), userroletype == 'Student') %>%

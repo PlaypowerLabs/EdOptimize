@@ -87,19 +87,6 @@ select_col <- reactive({
 })
 
 
-# colorpal <- reactive({
-#   req(!is.null(input$ubg_map_tabs))
-#   
-#   if(input$ubg_map_tabs == 'heatmap'){
-#     colorNumeric(palette = 'Blues', domain = heatmap_data()[[select_col()]])
-#   }
-#   
-#   else if(input$ubg_map_tabs == 'dotchart'){
-#     colorNumeric(palette = 'Blues', domain = dotchart_data()[[select_col()]])
-#   }
-#   
-# })
-
 colorpal_heatmap <- reactive({
   req(!is.null(heatmap_data()))
   

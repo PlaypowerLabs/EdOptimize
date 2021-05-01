@@ -979,10 +979,6 @@ output$uot_aeu_plot <- renderPlot({
 output$uot_table <- DT::renderDataTable({
   req(!is.null(input$uot_res), !is.null(input$uot_usage_type))
   
-  # validate(
-  #   need(nrow(uot_table_data()) != 0, 'No Usage for Selected Filters')
-  # )
-  
   dateid_header <- c(Day = 'Date', Week = 'Date(binned by week)', Month = 'Month')
   
   if(input$uot_usage_type == "Overall"){

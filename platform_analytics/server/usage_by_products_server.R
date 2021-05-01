@@ -57,16 +57,6 @@ select_color <- reactive({
   color_pal
 })
 
-# product_summary_table_data <- reactive({
-#   req(!is.null(input$ubp_product_group))
-#   
-#   df <- ubp_table_product_data_rdf %>%
-#     filter(product_group %in% input$ubp_product_group) %>%
-#     rename('Subject' = subject, 'Grade Band' = grade_band, 'Product Group' = product_group, 'Product' = product,
-#            '# Districts' = n_districts, '# Schools' = n_schools, '# Sessions' = n_sessions, '# Students' = n_students, '# Teachers' = n_teachers)
-#   
-#   df
-# })
 
 ubp_usage_over_time_plot_data <- reactive({
   req(!is.null(input$ubp_product_group), !is.null(input$ubp_uot_deeper_dive), !is.null(input$ou_select_year))
@@ -231,28 +221,6 @@ output$ubp_product_users_plot <- renderPlot({
   
   product_wise_users_plot(product_wise_plot_data(),select_color(), input$ubp_product_group)
 })
-
-
-# output$ubp_product_summary_table <- DT::renderDataTable({
-#   req(!is.null(input$ubp_product_group))
-#   
-#   ncols <- ncol(product_summary_table_data())
-#   columns <- colnames(product_summary_table_data())[(ncols-4):ncols]
-#   break_col <- break_col_func(product_summary_table_data(), columns)
-#   
-#   brks <- break_col$brks
-#   clrs <- break_col$clrs
-#   
-#   init_tbl <- DT::datatable(product_summary_table_data(), filter = 'top', class = 'cell-border stripe', options = list(
-#     pageLength = 10, autoWidth = TRUE, sDom  = '<"top">lrt<"bottom">ip'
-#   ))
-#   
-#   purrr::reduce(columns, function(x, y) {
-#     DT::formatStyle(x, y, backgroundColor = DT::styleInterval(brks[[y]], clrs[[y]]))
-#     
-#   }, .init = init_tbl)
-#   
-# })
 
 output$ubp_pg_usage_over_time_plot <- renderPlot({
   

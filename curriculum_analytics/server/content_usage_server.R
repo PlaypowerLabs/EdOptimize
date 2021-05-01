@@ -220,8 +220,6 @@ cu_table_data <- reactive({
       arrange(content)
   }
   
-  # row_order <- gtools::mixedorder(df$content)
-  # df <- df[row_order,]
   
   col_name_mapping <- c(product_group = 'Product Group', product = 'Product', content = 'Content ID',
                         title = 'Title', contenttype = 'Content Type', n_students = 'Students',
