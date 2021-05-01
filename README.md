@@ -1,17 +1,24 @@
 # EdOptimize - An Open Source K-12 Learning Analytics Platform
-### For K-12 Digital Learning Platforms
 
-Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Toolkits, product, curriculum, and customer support teams can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from these toolkits will enable many stakeholders to take evidence based decisions that are aimed at creating an engaging and effective online learning experience. 
+## Introduction
+Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Platform, we can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from the dashboards in the platform will enable many stakeholders to take evidence based decisions that are aimed at creating an improved online learning experience. 
 
-We are providing 3 learning analytics toolkits with different focus areas:
+In the EdOptimize Platform, we are providing 3 extensive data dashboards with different focus areas:
 
-1. **Implementation Analytics**: Track the implementation of the digital programs in a group of learners (e.g. a school district). Help them make the most out of their programs by knowing where they are struggling.
+1. **Platform Analytics**: To discover trends and power users in the online learning platform. You can use the user behavior data in this platform to identify actions that can increase user retention and engagement.
 
-2. **Curriculum Analytics**: Identify patterns in the digital curriculum products. Locate content that needs change and see classroom pacing analytics. Look at assessment and standards performance of the program users.
+2. **Curriculum Analytics**: To identify learning patterns in the digital curriculum products. Using this dashboard, you can locate content that needs change and see classroom pacing analytics. You can also look at assessment data, item analysis, and standards performance of the curriculum users.
 
-3. **Platform Analytics**: Discover trends and power users in the online learning platform. Use the user behavior data to tweak the online platform and increase user retention and engagement.
+3. **Implementation Analytics**: To track the implementation of the digital programs in school districts. This dashboard will help districts make the most out of their online learning programs.
 
-All of the above toolkits work with a common data format. Here is a simplified diagram of how things work:
+Our platform relies on a commonly seen hierarchical model of educational activity that consists of school districts, schools, classrooms, and ultimately students and teachers within those classrooms. We also have a simple conceptual model of educational programs that has product groups and products where the former is a group of related products such as K-5 Math, 6-8 Science, etc. and the latter represents the individual grade level products. Here is a diagram that relates the conceptual models of the platform with the data dashboards:
+
+Coneptual Model of EdOptimize Platform![image](https://user-images.githubusercontent.com/830400/116781332-d1b8c000-aa9f-11eb-9ed8-91fc64c9c53f.png)
+
+All of the analytics dashboards in the EdOptimize Platform work with two commonly used edtech data collection formats:
+
+1. **Event Log Data**: This is the dataset that typically contains what events or actions students and tea
+2. **Item Response Log Data**: 
 
 Figure 1: How things work at a high level![image](https://user-images.githubusercontent.com/830400/115994507-e820d080-a5f4-11eb-9c2b-fbbe4067b353.png)
 
