@@ -4,11 +4,17 @@ Brought to you by [Tirth Shah](https://www.linkedin.com/in/tirth-shah-871b3217b/
 
 #### Live Demo Links
 
-Platform Analytics: https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
+![image](https://user-images.githubusercontent.com/830400/116785618-354ee780-aab8-11eb-97a8-031f7e146376.png)
 
-Curriculum Analytics: https://playpowerlabs.shinyapps.io/edopt_curriculum_analytics/
+https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
 
-Implementation Analytics: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
+![image](https://user-images.githubusercontent.com/830400/116785631-4566c700-aab8-11eb-9633-3fe171f4aa57.png)
+
+https://playpowerlabs.shinyapps.io/edopt_curriculum_analytics/
+
+![image](https://user-images.githubusercontent.com/830400/116785636-4861b780-aab8-11eb-8527-c89995e0f58c.png)
+
+https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
 
 #### Table of Contents
 
