@@ -14,6 +14,11 @@ Implementation Analytics: https://playpowerlabs.shinyapps.io/edopt_implementatio
 
 - [Introduction](#introduction)
 - [Dashboards](#dashboards)
+  - [Platform Analytics](#platform-analytics)
+  - [Curriculum Analytics](#curriculum-analytics)
+  - [Implementation Analytics](#implementation-analytics)
+- [How to Run](#how-to-run)
+- [About Us](#about-us)
 
 ## Introduction
 Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Platform, we can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from the EdOptimize Platform can enable education stakeholders to take evidence based decisions that are aimed at creating improved online learning experiences. 
