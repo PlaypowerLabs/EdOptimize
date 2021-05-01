@@ -1,4 +1,4 @@
-# EdOptimize Learning Analytics Toolkits
+# EdOptimize - An Open Source K-12 Learning Analytics Platform
 ### For K-12 Digital Learning Platforms
 
 Data from EdTech platforms have a tremendous potential to positively impact the student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Toolkits, product, curriculum, and customer support teams can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from these toolkits will enable many stakeholders to take evidence based decisions that are aimed at creating an engaging and effective online learning experience. 
