@@ -16,7 +16,7 @@ Implementation Analytics: https://playpowerlabs.shinyapps.io/edopt_implementatio
 - [Dashboards](#dashboards)
   - [Platform Analytics](#platform-analytics)
   - [Curriculum Analytics](#curriculum-analytics)
-  - [Implementation Analytics](#implementation-analytics)
+  - [Implementation Analytics](#implementation-analyitcs)
 - [How to Run](#how-to-run)
 - [About Us](#about-us)
 
