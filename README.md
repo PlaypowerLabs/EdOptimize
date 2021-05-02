@@ -26,7 +26,7 @@ https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
   - [Curriculum Analytics](#curriculum-analytics)
   - [Implementation Analytics](#implementation-analytics)
 - [How to Run](#how-to-run)
-- [About Us](#about-us)
+- [About Playpower Labs](#about-playpower-labs)
 
 ## Introduction
 Data from EdTech platforms have a tremendous potential to positively impact student learning outcomes. EdTech leaders are now realizing that learning analytics data can be used to take decisive actions that make online learning more effective. By using the EdOptimize Platform, we can rapidly begin to observe the implementation of digital learning programs at scale. The data insights from the EdOptimize Platform can enable education stakeholders to make evidence-based decisions that are aimed at creating improved online learning experiences. 
@@ -136,9 +136,7 @@ At the end of this step, the dashboards will start running out of the box!
 ### Step 4: Run the dashboards
 To run any dashboard after you have generated its data, go to the specific dashboard folder and run the `app.R` file.
 
-## About Us
-
-**We are a team of dedicated Learning Analytics experts at Playpower Labs.**
+## About Playpower Labs
 
 Playpower Labs is one of the world's leading EdTech consulting companies. Our award-winning research team has worked with many different types of educational data. Examples include event data, assessment data, user behavior data, web analytics data, license and entitlement data, roster data, eText data, item response data, time-series data, panel data, hierarchical data, skill and standard data, assignment data, knowledge structure data, school demographic data, and more.
 
