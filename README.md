@@ -138,7 +138,7 @@ To run any dashboard after you have generated its data, go to the specific dashb
 
 ## About Us
 
-We are a team of dedicated Learning Analytics experts at Playpower Labs.
+**We are a team of dedicated Learning Analytics experts at Playpower Labs.**
 
 Playpower Labs is one of the world's leading EdTech consulting companies. Our award-winning research team has worked with many different types of educational data. Examples include event data, assessment data, user behavior data, web analytics data, license and entitlement data, roster data, eText data, item response data, time-series data, panel data, hierarchical data, skill and standard data, assignment data, knowledge structure data, school demographic data, and more.
 
