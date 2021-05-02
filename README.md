@@ -127,8 +127,8 @@ Data Processing Workflow![image](https://user-images.githubusercontent.com/83040
 
 Once you have your two data tables ready (simulated or otherwise), you can run the data processing scripts individual dashboard folders. There is one script per dashboard. These scripts will generate all of the required RData files for each of the dashboards and place them in their respective folders. Here are the scripts for each of the dashboards:
 
-1. Platform Analytics: `implementation_analytics/data/implementation_analytics_data_prep.R`
-2. Curriculum Analytics: `implementation_analytics/data/implementation_analytics_data_prep.R`
+1. Platform Analytics: `platform_analytics/data/implementation_analytics_data_prep.R`
+2. Curriculum Analytics: `curriculum_analytics/data/implementation_analytics_data_prep.R`
 3. Implementation Analytics: `implementation_analytics/data/implementation_analytics_data_prep.R`
 
 At the end of this step, the dashboards will start running out of the box!
