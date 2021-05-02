@@ -1,6 +1,6 @@
 # EdOptimize - An Open Source K-12 Learning Analytics Platform
 
-Brought to you by [Tirth Shah](https://www.linkedin.com/in/tirth-shah-871b3217b/), [Nirmal Patel](https://www.linkedin.com/in/nirmalpatel21/), and [Aditya Sharma](https://www.linkedin.com/in/aditya-sharma-06b529101/) at [Playpower Labs](https://playpowerlabs.com/). For any help with modifying the dashboards, please open an issue or contact Nirmal (nirmal@playpowerlabs.com).
+Brought to you by the data science team at [Playpower Labs](https://playpowerlabs.com/). Authored by [Tirth Shah](https://www.linkedin.com/in/tirth-shah-871b3217b/) and designed by [Nirmal Patel](https://www.linkedin.com/in/nirmalpatel21/) and [Aditya Sharma](https://www.linkedin.com/in/aditya-sharma-06b529101/). For any help with modifying the dashboards, please open an issue or contact Nirmal (nirmal@playpowerlabs.com).
 
 #### Live Demo Links
 
