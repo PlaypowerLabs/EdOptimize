@@ -55,6 +55,8 @@ Now we will describe each of the dashboards and the various sections within them
 
 ### Platform Analytics
 
+![image](https://user-images.githubusercontent.com/830400/116785618-354ee780-aab8-11eb-97a8-031f7e146376.png)
+
 #### Live Demo: https://playpowerlabs.shinyapps.io/edopt_platform_analytics/
 
 This dashboard allows us to observe the overall usage of an entire digital learning platform. By using this dashboard, we can get insights about how different parts of the platform are being used, which types of content is being used more or less, and discover who are the power users of the platform.
@@ -71,6 +73,8 @@ Here are the descriptions of each of the sections in this dashboard:
 6. **Leaderboard**: The leaderboard section lets you discover your power users. Here, you can see which school districts are your top users. You can also click on any district in the leaderboard table and look at their usage over time.
 
 ### Curriculum Analytics
+
+![image](https://user-images.githubusercontent.com/830400/116785631-4566c700-aab8-11eb-9633-3fe171f4aa57.png)
 
 #### Live Demo: https://playpowerlabs.shinyapps.io/edopt_curriculum_analytics/
 
@@ -89,6 +93,8 @@ Here are the descriptions of each of the sections in this dashboard:
 7. **Leaderboard**: In this part of the dashboard, you can see which school districts are the top users of the products within this product group. You can select an individual district by clicking on its name in the leaderboard table and see the district's product usage over time.
 
 ### Implementation Analytics
+
+![image](https://user-images.githubusercontent.com/830400/116785636-4861b780-aab8-11eb-8527-c89995e0f58c.png)
 
 #### Live Demo: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
 
