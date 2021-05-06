@@ -25,6 +25,7 @@ https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
   - [Platform Analytics](#platform-analytics)
   - [Curriculum Analytics](#curriculum-analytics)
   - [Implementation Analytics](#implementation-analytics)
+- [Data Architecture (#data-architecture)
 - [How to Run](#how-to-run)
 - [About Playpower Labs](#about-playpower-labs)
 
@@ -33,7 +34,7 @@ Data from EdTech platforms have a tremendous potential to positively impact stud
 
 EdOptimize Platform is a collection of 3 extensive data dashboards. These dashboards contain many actionable learning analytics that we have designed from our years of work with various school districts in the US.
 
-![image](https://user-images.githubusercontent.com/830400/116783550-e3ed2b00-aaac-11eb-8171-395c0f1c43a6.png)
+![image](https://user-images.githubusercontent.com/830400/117278121-19639100-ae7e-11eb-95f3-ff7e7654a900.png)
 
 Here are the brief descriptions of each of the dashboards:
 
@@ -94,7 +95,7 @@ Here are the descriptions of each of the sections in this dashboard:
 
 ### Implementation Analytics
 
-![image](https://user-images.githubusercontent.com/830400/116785636-4861b780-aab8-11eb-8527-c89995e0f58c.png)
+![image](https://user-images.githubusercontent.com/830400/117278198-2d0ef780-ae7e-11eb-8fb9-4ba36c1c6fd7.png)
 
 #### Live Demo: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
 
@@ -109,23 +110,23 @@ Here are the descriptions of each of the sections in this dashboard:
 3. **Curriculum Insights**: Here, you can pick a specific product that the district is using, and closely look at the usage of that product. You will be able to see plots similar to the Usage Over Time section. Curriculum Pacing plots will allow you to track the pacing patterns within the district for a given product. For more description of the pacing plots, see the Curriculum Pacing section of the Curriculum Analytics dashboard.
 4. **Leaderboard**: The leaderboard will show you which schools and classes are most active in the district. You can look at the leaderboard at the overall level or the product level. For any given class or school in the leaderboard, you can see their usage over time by clicking on the class/school name in the leaderboard table.
 
-## How to Run
-
-Please follow the steps below to run the dashboards on your end.
-
-### Step 1: Understand the data architecture
+## Data Architecture
 
 All of the analytics dashboards in the EdOptimize Platform work with two commonly used edtech data collection formats:
 
 1. **Event Log Data**: A dataset that typically contains what events or actions students and teachers do over time. [Click here to view a sample](https://docs.google.com/spreadsheets/d/1Zcb4TLAanbNVZORve91Upa0-QL9liZ3G7XNx3Cz4DF4/edit#gid=0)
 2. **Item Response Log Data**: A dataset that contains individual responses to test items from the students. [Click here to view a sample](https://docs.google.com/spreadsheets/d/1Zcb4TLAanbNVZORve91Upa0-QL9liZ3G7XNx3Cz4DF4/edit#gid=1857608461)
 
-### Step 2: Collect (or simulate) the raw data
+## How to Run
+
+Please follow the steps below to run the dashboards on your end.
+
+### Step 1: Collect (or simulate) the raw data
 You can create your automated data pipeline that creates the two tables mentioned in the section above. Please ensure that the columns and data types of your data match the data samples presented. If you do not have all of the data points presented in the tables above, try to put in some dummy values. If you want to modify these dashboards, please open an issue. If you need professional help, see our contact details at the top or bottom.
 
 Optionally, we have also provided a data simulation script `data_prep/raw_data_simulation.R` that simulates the two data tables (i.e. Event Log and Item Response Log). To simulate the data on your end, you can simply run the `raw_data_simulation.R` and it will generate the required RData data containing the raw data for you.
 
-### Step 3: Run the data processing scripts
+### Step 2: Run the data processing scripts
 
 The data processing scripts in this repository are designed to take the above two raw data tables and transform them into several smaller tables that will contain the learning analytics. Here is the 
 
@@ -139,7 +140,7 @@ Once you have your two data tables ready (simulated or otherwise), you can run t
 
 At the end of this step, the dashboards will start running out of the box!
 
-### Step 4: Run the dashboards
+### Step 3: Run the dashboards
 To run any dashboard after you have generated its data, go to the specific dashboard folder and run the `app.R` file.
 
 ## About Playpower Labs
