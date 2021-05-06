@@ -25,7 +25,7 @@ https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
   - [Platform Analytics](#platform-analytics)
   - [Curriculum Analytics](#curriculum-analytics)
   - [Implementation Analytics](#implementation-analytics)
-- [Data Architecture] (#data-architecture)
+- [Data Architecture](#data-architecture)
 - [How to Run](#how-to-run)
 - [About Playpower Labs](#about-playpower-labs)
 
