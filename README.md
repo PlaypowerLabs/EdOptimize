@@ -95,13 +95,13 @@ Here are the descriptions of each of the sections in this dashboard:
 
 ### Implementation Analytics
 
-![image](https://user-images.githubusercontent.com/830400/117278198-2d0ef780-ae7e-11eb-8fb9-4ba36c1c6fd7.png)
+![image](https://user-images.githubusercontent.com/830400/116785636-4861b780-aab8-11eb-8527-c89995e0f58c.png)
 
 #### Live Demo: https://playpowerlabs.shinyapps.io/edopt_implementation_analytics/
 
 This dashboard presents a view of how a school district (which is a group of schools) is implementing a digital learning program. Every data view in this dashboard is limited to a single school district. The various patterns of digital learning within the district can empower many stakeholders to make online learning more effective for students.
 
-![image](https://user-images.githubusercontent.com/830400/115994526-fcfd6400-a5f4-11eb-85e4-6bdd2613796f.png)
+![image](https://user-images.githubusercontent.com/830400/117278198-2d0ef780-ae7e-11eb-8fb9-4ba36c1c6fd7.png)
 
 Here are the descriptions of each of the sections in this dashboard:
 
